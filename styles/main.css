@@ -202,7 +202,7 @@ figure {
       outline: none; }
   #footer #bottom-footer {
     margin-top: 50px;
-    background: lightgreen;
+    background: #f0115f;
     text-align: center; }
     #footer #bottom-footer ul {
       padding: 0;
@@ -215,6 +215,8 @@ figure {
       #footer #bottom-footer ul li a {
         display: block;
         padding: 1em;
-        color: #f0115f; }
+        color: lightgreen;
+        font-family: 'Rock Salt', 'Roboto', Arial, sans-serif;
+        font-size: 30px; }
 
 /*# sourceMappingURL=main.css.map */
