@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="animated fadeIn">
+
+
+    <div id="slideMenu">
+       <h2><a href="#">home</a></h2>
+       <h2><a href="#">services</a></h2>
+       <h2><a href="#">about</a></h2>
+       <h2><a href="#">contact</a></h2>
+    </div>
+
+    <header>
+
+        <div class="header-overlay">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li class="logo">Logo</li>
+                        <li><i class="fa fa-bars animated tada" id="navBtn"></i></li>
+                    </ul>
+                </nav>
+                <div class="container heading-container">
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <h1 class="heading-title animated fadeInLeft">Hand. Coded. Development
+                            <br>&amp; Design</h1><br>
+                            <h3 class="animated fadeIn" style="animation-delay: 1.2s">A front end portfolio by: <br>
+                            Chris Hansen</h3>
+                            <div class="button-group animated bounce" role="group" style="animation-delay: 2s">
+                                <button type="button" class="btn btn-success">Get a website</button>
+                                <button type="button" class="btn btn-success">Get other service</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <section id="landing-sites">
+
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <h1 class="main-title">Landing pages &amp; sites</h1>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <div class="feature">
+                        <figure>
+                            <h1>feature</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nulla, accusamus maxime. Blanditiis ab, molestias asperiores consequatur odio quas labore at, voluptatum nostrum ipsa reiciendis consectetur eius quisquam tenetur impedit.</p>
+                            <figcaption>
+                                <p>this is a fig caption</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="feature">
+                        <figure>
+                            <h1>feature</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nulla, accusamus maxime. Blanditiis ab, molestias asperiores consequatur odio quas labore at, voluptatum nostrum ipsa reiciendis consectetur eius quisquam tenetur impedit.</p>
+                            <figcaption>
+                                <p>this is a fig caption</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="feature">
+                        <figure>
+                            <h1>feature</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nulla, accusamus maxime. Blanditiis ab, molestias asperiores consequatur odio quas labore at, voluptatum nostrum ipsa reiciendis consectetur eius quisquam tenetur impedit.</p>
+                            <figcaption>
+                                <p>this is a fig caption</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script>
+
+    var roundBtn = document.querySelector('#navBtn');
+    var slideMenu = document.querySelector('#slideMenu');
+
+    roundBtn.addEventListener("click", showMenu, false);
+    slideMenu.addEventListener("click", hideMenu, false);
+
+    function showMenu(e) {
+       slideMenu.classList.add("show");
+
+       document.body.style.overflow = "hidden";
+    }
+
+    function hideMenu(e) {
+       slideMenu.classList.remove("show");
+       e.stopPropagation();
+
+       document.body.style.overflow = "auto";
+
+}
+
+</script>
+
+
+</body>
+</html>
