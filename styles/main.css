@@ -7,7 +7,14 @@
 body, html {
   height: 100%;
   font-family: 'Roboto', Arial, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  background: #fff; }
+
+.main-title {
+  margin: 50px 0;
+  display: inline-block;
+  border-bottom: 2px solid #f0115f;
+  padding: 10px; }
 
 #navBtn {
   cursor: pointer;
@@ -26,7 +33,7 @@ body, html {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.7);
   z-index: 9999;
   transform: translate3d(-100vw, 0, 0);
   transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
@@ -38,10 +45,9 @@ body, html {
 #slideMenu h2 a {
   font-family: sans-serif;
   font-size: 70px;
-  color: lightgreen;
+  color: #f0115f;
   margin-left: 15px;
-  text-decoration: none;
-  text-shadow: 0px 0px 20px black; }
+  text-decoration: none; }
 
 #slideMenu h2 a:hover {
   text-decoration: underline; }
@@ -84,28 +90,131 @@ header {
             outline: none;
             border: none; }
 
-#landing-sites h1.main-title {
-  display: inline-block;
-  font-family: "Oswald", "Roboto", Arial;
-  font-size: 50px;
-  color: #de271c; }
-  @media screen and (min-width: 468px) {
-    #landing-sites h1.main-title {
-      border-bottom: 4px solid #7fdd63; } }
+figure {
+  filter: drop-shadow(10px 10px 10px #333); }
+
 #landing-sites .feature {
-  height: auto;
-  width: auto;
-  margin: 50px auto; }
+  margin-top: 50px; }
   #landing-sites .feature figure {
-    position: relative;
-    background: rgba(255, 255, 255, 0.5);
-    transition: .5s ease-in-out; }
-    #landing-sites .feature figure:hover {
-      transform: rotateY(180deg); }
-    #landing-sites .feature figure figcaption {
+    width: 100%;
+    position: relative; }
+    #landing-sites .feature figure:hover .figure-overlay {
+      opacity: 1; }
+    #landing-sites .feature figure img {
+      display: block;
+      height: auto;
+      width: 100%; }
+    #landing-sites .feature figure .figure-overlay {
       position: absolute;
-      height: 50px;
-      border: 1px solid black;
-      padding: .5em; }
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background: rgba(92, 213, 77, 0.6); }
+  #landing-sites .feature .desc {
+    background: #eee;
+    min-height: 150px;
+    height: auto;
+    text-align: center;
+    padding-top: 5px; }
+
+.banner-2 {
+  margin: 50px 0;
+  background: url("../assets/images/bridge-blur.jpg");
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  .banner-2 h1 {
+    text-align: center;
+    border: 2px solid #f0115f;
+    display: inline-block;
+    margin: 100px 0;
+    color: #f0115f; }
+
+#webapps {
+  margin: 50px 0; }
+  #webapps .feature {
+    margin-top: 50px; }
+    #webapps .feature figure {
+      width: 100%;
+      position: relative; }
+      #webapps .feature figure:hover .figure-overlay {
+        opacity: 1; }
+      #webapps .feature figure img {
+        display: block;
+        height: auto;
+        width: 100%; }
+      #webapps .feature figure .figure-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background: rgba(240, 17, 95, 0.5); }
+    #webapps .feature .desc {
+      background: #eee;
+      min-height: 150px;
+      height: auto;
+      text-align: center;
+      padding-top: 5px; }
+
+#skills .skill {
+  width: 100px;
+  height: auto; }
+#skills .language-container {
+  display: flex;
+  flex-wrap: wrap; }
+  #skills .language-container .language-box {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto; }
+    #skills .language-container .language-box .skill {
+      font-size: 70px; }
+      #skills .language-container .language-box .skill:hover {
+        color: lightgreen; }
+
+#footer {
+  text-align: center;
+  height: 350px;
+  width: 100%;
+  margin: 50px auto; }
+  #footer form {
+    margin: 0 auto; }
+    #footer form #name {
+      width: 50%; }
+    #footer form #email {
+      width: 50%; }
+    #footer form #message {
+      width: 50%; }
+    #footer form input:focus, #footer form textarea:focus {
+      outline: none; }
+  #footer #bottom-footer {
+    margin-top: 50px;
+    background: lightgreen;
+    text-align: center; }
+    #footer #bottom-footer ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 50px;
+      justify-content: center; }
+      #footer #bottom-footer ul li a {
+        display: block;
+        padding: 1em;
+        color: #f0115f; }
 
 /*# sourceMappingURL=main.css.map */
