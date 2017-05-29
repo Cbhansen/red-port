@@ -239,7 +239,10 @@ figure {
 }
 
 #about {
-    //
+    min-height: 350px;
+    height: auto;
+    background: $primaryColor;
+    padding: 1em;
 }
 
 #skills {

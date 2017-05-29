@@ -169,6 +169,12 @@ figure {
       text-align: center;
       padding-top: 5px; }
 
+#about {
+  min-height: 350px;
+  height: auto;
+  background: #f0115f;
+  padding: 1em; }
+
 #skills .skill {
   width: 100px;
   height: auto; }
