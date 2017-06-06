@@ -58,7 +58,7 @@ body, html {
 header {
   position: relative;
   height: 70vh;
-  background: url("/Users/cbh17sen/sites/portfolios/port-love/assets/images/cafe.jpg");
+  background: url("../images/cafe.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
