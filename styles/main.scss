@@ -36,6 +36,8 @@ body, html {
     display: inline-block;
     border-bottom: 2px solid $primaryColor;
     padding: 10px;
+    font-family: 'Oswald', 'Roboto', Arial, sans-serif;
+    font-weight: bold;
 }
 
 ///////////////// SLIDE MENU //////////////////
@@ -62,7 +64,7 @@ body, html {
    left: 0;
 
    // background-color: rgba(0,0,0,.8);
-   background: rgba(255,255,255,.7);
+   background: rgba(51, 51, 51, 0.96);
    z-index: 9999;
 
    transform: translate3d(-100vw, 0, 0);
@@ -80,10 +82,11 @@ body, html {
    color: $primaryColor;
    margin-left: 15px;
    text-decoration: none;
-}
-
-#slideMenu h2 a:hover {
-   text-decoration: underline;
+   transition: .2s ease-in-out;
+   &:hover {
+       text-decoration: underline;
+       color: $lightGreen;
+   }
 }
 
 //////////////// HEADER ////////////////////
@@ -91,7 +94,7 @@ body, html {
 header {
     position: relative;
     height: 70vh;
-    background: url('../assets/images/cafe.jpg');
+    background: url('/Users/cbh17sen/sites/portfolios/port-love/assets/images/cafe.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -150,7 +153,7 @@ figure {
             width: 100%;
             position: relative;
             &:hover .figure-overlay {
-                opacity: 1;
+                opacity: .9;
             }
             img {
                 display: block;
@@ -167,16 +170,31 @@ figure {
                 width: 100%;
                 opacity: 0;
                 transition: .5s ease;
-                background: $lightGreenOpaque;
+                background: #333;
+                .desc-overlay {
+                    color: #fff;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    i.fa {
+                        color: #fff;
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                }
             }
         }
             .desc {
             // margin-top: 10px;
-            background: #eee;
+            // border: 5px solid $lightGreen;
             min-height: 150px;
             height: auto;
             text-align: center;
             padding-top: 5px;
+            font-family: 'Oswald', 'Roboto', Arial, sans-serif;
         }
     }
 }
@@ -241,7 +259,8 @@ figure {
 #about {
     min-height: 350px;
     height: auto;
-    background: $primaryColor;
+    background: #333;
+    color: #fff;
     padding: 1em;
 }
 
@@ -273,6 +292,12 @@ figure {
     height: 350px;
     width: 100%;
     margin: 50px auto;
+    #top {
+        float: right;
+        font-size: 35px;
+        border: 5px solid $primaryColor;
+        color: #333;
+    }
     form {
         margin: 0 auto;
         #name { width: 50%;}
@@ -285,6 +310,7 @@ figure {
         }
     }
     #bottom-footer {
+        clear: both;
         margin-top: 50px;
         background: $primaryColor;
         text-align: center;
@@ -302,6 +328,9 @@ figure {
                 color: $lightGreen;
                 font-family: 'Rock Salt', 'Roboto', Arial, sans-serif;
                 font-size: 30px;
+                &:hover {
+                    color: #333;
+                }
             }
         }
     }

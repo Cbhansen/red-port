@@ -14,7 +14,9 @@ body, html {
   margin: 50px 0;
   display: inline-block;
   border-bottom: 2px solid #f0115f;
-  padding: 10px; }
+  padding: 10px;
+  font-family: 'Oswald', 'Roboto', Arial, sans-serif;
+  font-weight: bold; }
 
 #navBtn {
   cursor: pointer;
@@ -33,7 +35,7 @@ body, html {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(51, 51, 51, 0.96);
   z-index: 9999;
   transform: translate3d(-100vw, 0, 0);
   transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
@@ -47,15 +49,16 @@ body, html {
   font-size: 70px;
   color: #f0115f;
   margin-left: 15px;
-  text-decoration: none; }
-
-#slideMenu h2 a:hover {
-  text-decoration: underline; }
+  text-decoration: none;
+  transition: .2s ease-in-out; }
+  #slideMenu h2 a:hover {
+    text-decoration: underline;
+    color: lightgreen; }
 
 header {
   position: relative;
   height: 70vh;
-  background: url("../assets/images/cafe.jpg");
+  background: url("/Users/cbh17sen/sites/portfolios/port-love/assets/images/cafe.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -99,7 +102,7 @@ figure {
     width: 100%;
     position: relative; }
     #landing-sites .feature figure:hover .figure-overlay {
-      opacity: 1; }
+      opacity: .9; }
     #landing-sites .feature figure img {
       display: block;
       height: auto;
@@ -114,13 +117,24 @@ figure {
       width: 100%;
       opacity: 0;
       transition: .5s ease;
-      background: rgba(92, 213, 77, 0.6); }
+      background: #333; }
+      #landing-sites .feature figure .figure-overlay .desc-overlay {
+        color: #fff;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        #landing-sites .feature figure .figure-overlay .desc-overlay i.fa {
+          color: #fff; }
+          #landing-sites .feature figure .figure-overlay .desc-overlay i.fa:hover {
+            color: red; }
   #landing-sites .feature .desc {
-    background: #eee;
     min-height: 150px;
     height: auto;
     text-align: center;
-    padding-top: 5px; }
+    padding-top: 5px;
+    font-family: 'Oswald', 'Roboto', Arial, sans-serif; }
 
 .banner-2 {
   margin: 50px 0;
@@ -172,7 +186,8 @@ figure {
 #about {
   min-height: 350px;
   height: auto;
-  background: #f0115f;
+  background: #333;
+  color: #fff;
   padding: 1em; }
 
 #skills .skill {
@@ -196,6 +211,11 @@ figure {
   height: 350px;
   width: 100%;
   margin: 50px auto; }
+  #footer #top {
+    float: right;
+    font-size: 35px;
+    border: 5px solid #f0115f;
+    color: #333; }
   #footer form {
     margin: 0 auto; }
     #footer form #name {
@@ -207,6 +227,7 @@ figure {
     #footer form input:focus, #footer form textarea:focus {
       outline: none; }
   #footer #bottom-footer {
+    clear: both;
     margin-top: 50px;
     background: #f0115f;
     text-align: center; }
@@ -224,5 +245,7 @@ figure {
         color: lightgreen;
         font-family: 'Rock Salt', 'Roboto', Arial, sans-serif;
         font-size: 30px; }
+        #footer #bottom-footer ul li a:hover {
+          color: #333; }
 
 /*# sourceMappingURL=main.css.map */
